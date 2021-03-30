@@ -9,6 +9,22 @@ class SeleniumHelper(SeleniumBasic):
     def close_app(self):
         self.close()
 
+    def execute_script(self, param):
+        self.driver.execute_script("window.scrollTo(0,"+ param +")")
+
+    def find_element(self, param):
+        return self.driver.find_element(*param)
+
+    def click(self):
+        self.click()
+
+    def send_keys(self, text):
+        self.send_keys(text)
+
+    def select_by_visible_text(self,text):
+        self.select_by_visible_text(text)
+
+
 if __name__  == "__main__":
     # Module Test code goes here
     s = SeleniumHelper()
