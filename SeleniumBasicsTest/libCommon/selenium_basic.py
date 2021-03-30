@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.support.ui import Select
 
 
 class SeleniumBasic:
@@ -6,14 +7,14 @@ class SeleniumBasic:
     def __init__(self):
         # Driver relative path
         self.driver = None
-        self.driver_path = "..\\dependecies\\drivers\\Chrome\\chromedriver.exe"
+        #self.driver_path = "..\\dependecies\\drivers\\Chrome\\chromedriver.exe"
         self.initialize_driver()
 
     def initialize_driver(self):
         try:
-            self.driver = webdriver.Chrome(self.driver_path)
+            self.driver = webdriver.Chrome()
         except:
-            print("Initilize driver failed")
+            print("Initialize driver failed")
         return self.driver
 
     def close(self):
@@ -30,3 +31,14 @@ class SeleniumBasic:
 
     def get_page_source(self):
         return self.driver.page_source
+
+    def implecit_waits(self,para):
+        self.driver.implicitly_wait(para)
+
+    def Select(self, driver):
+        return Select(driver)
+
+
+
+
+
