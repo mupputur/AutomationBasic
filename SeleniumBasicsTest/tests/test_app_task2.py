@@ -7,9 +7,9 @@ class TestAPPTechListTask1(unittest.TestCase):
     def setUp(self) -> None:
         self.app = APPTechList()
         print(self._testMethodName)
-        self.response = self.app.launch()
+        self.response = self.app.fill_form()
 
-    def test1_Launch_browser(self):
+    def test1_filling_form(self):
         """
         1 Open this link - https://www.techlistic.com/p/selenium-practice-form.html
         2 Enter first and last name (textbox).

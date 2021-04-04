@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="SeleniumBasicsTest.libCommon.selenium_helper.libCommon" />
+          <option value="libCommon.selenium_basic.send_keys" />
+          <option value="libCommon.selenium_basic.action.move_to_element" />
+          <option value="libCommon.selenium_basic.action.perform" />
+          <option value="libCommon.selenium_helper.action.move_to_element" />
+          <option value="libCommon.selenium_helper.action.perform" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
