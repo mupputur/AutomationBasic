@@ -1,0 +1,102 @@
+Report Custumizations
+
+
+The report file name:
+
+    test_module_or_filename__or_testsuite_name_report_03Apr2021.html
+
+ The title : SeleniumBasicTest Framework Results
+
+ Environment: Operating system
+              Python version
+              Browser
+              Browser version
+
+ Executed Person :
+
+
+
+-----
+Skip one some test case
+fail test case
+
+
+
+#json format
+[
+  {"tag":"title","html":"SeleniumBasicTest Framework Results"},
+  {"tag":"meta","charset":"utf-8","html":""},
+  {"tag":"meta","name":"viewport","content":"width=device-width, initial-scale=1.0","html":""},
+  {"tag":"link","rel":"stylesheet","href":"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css","integrity":"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7","crossorigin":"anonymous","html":""},
+  {"tag":"div","class":"container","children":[
+      {"tag":"div","class":"row","children":[
+          {"tag":"div","class":"col-xs-12","children":[
+              {"tag":"h2","class":"text-capitalize","html":"Unittest Results"},
+              {"tag":"p","class":"attribute","children":[
+                  {"tag":"strong","html":"Start Time: "}
+                ]},
+              {"tag":"p","class":"attribute","children":[
+                  {"tag":"strong","html":"Duration: "}
+                ]},
+              {"tag":"p","class":"attribute","children":[
+                  {"tag":"strong","html":"Summary: "}
+                ]}
+            ]}
+        ]},
+      {"tag":"div","class":"row","children":[
+          {"tag":"div","class":"col-xs-12 col-sm-10 col-md-10","children":[
+              {"tag":"table","class":"table table-hover table-responsive","children":[
+                  {"tag":"thead","children":[
+                      {"tag":"tr","children":[
+                          {"tag":"th","html":"__main__.Test1"},
+                          {"tag":"th","html":"Status"},
+                          {"tag":"th","html":""}
+                        ]}
+                    ]},
+                  {"tag":"tbody","children":[
+                      {"tag":"tr","class":"success","children":[
+                          {"tag":"td","class":"col-xs-10","html":"test1"},
+                          {"tag":"td","class":"col-xs-1","children":[
+                              {"tag":"span","class":"label label-success","style":"display:block;width:40px;","html":"Pass"}
+                            ]},
+                          {"tag":"td","class":"col-xs-1","html":"
+                            "}
+                        ]},
+                      {"tag":"tr","class":"success","children":[
+                          {"tag":"td","class":"col-xs-10","html":"test2"},
+                          {"tag":"td","class":"col-xs-1","children":[
+                              {"tag":"span","class":"label label-success","style":"display:block;width:40px;","html":"Pass"}
+                            ]},
+                          {"tag":"td","class":"col-xs-1","html":"
+                            "}
+                        ]},
+                      {"tag":"tr","children":[
+                          {"tag":"td","colspan":"3","html":"
+                                Total: 2, Pass: 2 -- Duration: 0 ms
+                            "}
+                        ]}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]},
+  {"tag":"script","src":"https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js","html":""},
+  {"tag":"script","type":"text/javascript","html":"
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    "}
+]
